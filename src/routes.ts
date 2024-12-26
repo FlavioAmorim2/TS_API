@@ -8,7 +8,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
       return { ok: true };
     });
 
-  fastify.post("/curtomer", async(request: FastifyRequest, reply: FastifyReply) => {
+  fastify.post("/customer", async(request: FastifyRequest, reply: FastifyReply) => {
     return new CreateCustomersController().handle(request, reply)
   });
 
